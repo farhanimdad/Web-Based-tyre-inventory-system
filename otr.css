@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+  }
+  
+  nav ul li {
+    margin: 0 25px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 7px;
+  }
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.product-card h3 {
+    margin: 15px 0;
+    font-size: 1.3rem;
+}
+.product-card p {
+    color: #666;
+}
+.tyre:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  footer {
+  background-color:#1b1b1a;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  }
+  .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  }
+  .footer-section {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 200px;
+  }
+  .footer-section h4 {
+  color: #e30614;
+  margin-bottom: 10px;
+  }
+  .social-icons a {
+  margin-right: 10px;
+  }
+  .social-icons img {
+  width: 20px;
+  height: 20px;
+  }
+  .footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  }
+  footer a {
+  color: #e30614;
+  text-decoration: none;
+  }
+  footer a:hover {
+  text-decoration: underline;
+  }
+  footer button {
+  background-color:#e30614;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  footer button:hover {
+  background-color: #e30614;
+  }
+@media screen and (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+}
